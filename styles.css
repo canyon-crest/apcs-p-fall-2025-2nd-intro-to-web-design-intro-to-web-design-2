@@ -128,11 +128,12 @@ a:active{
     font-size: 20px;
     font-weight:bold;
     background-color: rgb(222, 198, 198);
-   
+    
     width: 200px;
     box-shadow: 3px 3px 5px gray;
     height: 50px;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     text-shadow: 2px 2px 5px gray;
@@ -180,7 +181,7 @@ a:active{
 
 @media (max-width:1200px){
     #container{
-        background-color: bisque;
+        
         width: 800px;
     }
 
@@ -188,23 +189,20 @@ a:active{
 
 @media (max-width:992px){
     #container{
-        background-color: lightblue;
+        
         width: 100%;
     }
     #container, p{
         margin: 0;
         padding: 0;
-        border: none;
+        
     }
-    h1,h2,h3,body,p,body,div{
-        background-color: wheat;
-        border: none;
-    }
+    
     body{
         padding:20px;
     }
     #sidebar h3{
-        color: blue;
+        
     }
     p{
         text-align: justify;
@@ -257,18 +255,12 @@ html:hover{
     
 }
 
-#button{
-    background-color: rgb(234, 172, 172);
-    padding: 10px;
-    border-color: rgb(189, 189, 154);
-    border-width: 3px;
- 
+#videodescription{
+   
 }
 
 
-#video{
 
-}
 
 
 
