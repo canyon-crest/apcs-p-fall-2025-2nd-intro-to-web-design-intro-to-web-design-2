@@ -1,1 +1,271 @@
+/* @keyframes animation {
+    0%   { background-color: red; }
+    10%  { background-color: rgb(255, 115, 0); }
+    20%  { background-color: rgb(255, 251, 37); }
+    30%  { background-color: rgb(166, 255, 0); }
+    40%  { background-color: rgb(0, 255, 13); }
+    50%  { background-color: rgb(7, 177, 70); }
+    60%  { background-color: rgb(0, 217, 255); }
+    70%  { background-color: blue; }
+    80%  { background-color: rgb(200, 0, 255); }
+    90%  { background-color: rgb(131, 0, 85); }
+    100% { background-color: rgb(31, 31, 31); }
+    /* w3schools */
+
+
+
+html{
+    font-family: sans-serif;
+}
+
+
+
+body {
+    background-color:beige; 
+
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#container{
+    width: 950px;
+    margin: 0px auto;
+    background-color: rgb(216, 200, 200);
+    padding: 40px;
+    border-left: rgb(189, 189, 154) solid 4px;
+    border-right: rgb(189, 189, 154) solid 4px;
+    
+}
+
+#container:active{animation-name: animation;
+    animation-duration: 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+}
+
+
+
+
+h1 {
+    background-color: rgba(151, 55, 55, 0.851);
+    border: white, 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+    margin: 0px auto;
+    font-weight: 100;
+}
+
+h1:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 5px 5px 15px gray;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    text-shadow: 2px 2px 5px gray;
+    color: rgb(244, 244, 244);
+}
+
+h3{
+    
+    border-radius: 30px;
+    padding-left: 15px
+    ;
+}
+
+p{
+    line-height: 2.2em;
+}
+
+img{
+    float: left;
+    width: 300px;
+    border: white solid 5px;
+    box-shadow: 2px 2px 4px gray;
+    margin-right: 20px; 
+
+}
+
+a:link{
+    color:rgba(104, 185, 255, 0.851);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:visited{
+    color:rgba(255, 79, 223, 0.851);
+    text-decoration: underline;
+}
+
+
+
+
+
+a:active{
+    color:rgba(247, 187, 97, 0.851);
+
+}
+
+
+#pic1{
+    width: 200px;
+    height: 300px;
+    margin-right: 20px; 
+} 
+
+
+
+
+.highlight{
+    color: rgb(71, 71, 71);
+
+    font-size: 20px;
+    font-weight:bold;
+    background-color: rgb(222, 198, 198);
+    
+    width: 200px;
+    box-shadow: 3px 3px 5px gray;
+    height: 50px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px gray;
+}
+
+
+#sidebar{
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+    border: white solid 3.5px;
+    padding: 2px;
+    background-color: rgb(211, 128, 160);
+    margin-top: 7px;
+    margin-right: 10px;
+    line-height: 30px;
+    
+    
+}
+
+#sidebar:hover{
+    box-shadow: 5px 5px 15px gray;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.paragraph{
+    border: 5px solid white;
+    margin-top: 20px;
+    padding: 20px;  
+    box-shadow: 3px 3px 10px gray;
+}
+
+.paragraph:hover{
+    box-shadow: 10px 10px 25px gray;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    #container{
+        
+        width: 800px;
+        background-color: rgb(255, 250, 152);
+    }
+
+}
+
+@media (max-width:992px){
+    #container{
+        
+        width: 100%;
+        background-color: rgb(205, 243, 197);
+    }
+    #container, p{
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    body{
+        padding-right: 20px;
+        padding-left: 20px;
+       
+    }
+    #sidebar h3{
+        
+    }
+    p{
+        text-align: justify;
+    }
+}
+
+@media (max-width:768px){
+    #sidebar{
+        display: none; 
+    }
+    img,#pic1,#pic2{
+        float: none;
+        border: none; 
+        width: 100%;
+    }
+}
+
+img:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 5px 5px 15px gray;
+    
+}
+
+
+
+
+
+@keyframes Animation {
+  0%   {color:red;transform:rotate(0deg);}
+  25%  {color:yellow;transform:rotate(10deg);}
+  50%  {color:green;transform:rotate(10deg);}
+  75%  {color:blue; transform:rotate(-10deg);}
+  100% {color:purple;transform:rotate(-10deg);}
+}
+
+a{
+    display:inline-block;
+    transform-origin: center;
+}
+
+a:hover{
+    animation: Animation 0.3s infinite;
+    animation-delay: 0s;
+    
+}
+
+html:hover{
+    cursor:wait;
+    
+}
+
+#videodescription{
+   
+}
+
+
+
+
+
+
 
